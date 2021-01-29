@@ -1,0 +1,37 @@
+{
+  "name": "demo",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/runtime": "^7.11.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@knawat/mp": "^1.6.2",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "meteor-node-stubs": "^1.0.1",
+    "pug": "^3.0.0",
+    "vue": "^2.6.12",
+    "vue-class-component": "^7.2.6",
+    "vue-meteor-tracker": "^2.0.0-beta.5",
+    "vue-property-decorator": "^9.1.2",
+    "vue-server-renderer": "^2.6.12",
+    "vuex": "^3.6.0"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.ts",
+      "server": "server/main.ts"
+    }
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-typescript": "^7.12.1",
+    "@types/meteor": "^1.4.65"
+  }
+}

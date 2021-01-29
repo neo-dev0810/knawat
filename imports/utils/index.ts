@@ -1,0 +1,1 @@
+export const fetch = (path, options = {}, method = "GET", baseURL = "https://mp.knawat.io/api") => HTTP.call(method, `${baseURL}${path}`, options)
